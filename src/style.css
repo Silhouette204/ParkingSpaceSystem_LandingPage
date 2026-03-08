@@ -1,1 +1,31 @@
 @import 'tailwindcss';
+
+:root{
+  --body: #EAF6FF;
+  --primary:#FFFFFF;
+  --secondary:#41AFFE;
+  --text:#0A0A0A;
+  --dark:#8B8A8A;  
+  --backdrop: rgba(0, 0, 0, 0.5);
+}
+
+@theme{
+  --color-body: var(--body);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
+  --color-dark: var(--dark);
+  --color-backdrop: var(--backdrop);
+} 
+
+.body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-1{
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.link-nav{
+  @apply text-text text-xl font-semibold hover:bg-secondary py-3 hover:text-primary rounded-md transition-all duration-300;
+}
