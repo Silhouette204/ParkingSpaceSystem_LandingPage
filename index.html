@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -16,19 +16,12 @@
   <div id="navigation-container"></div>
 
   <!-- (HERO LANDING PAGE) main page of localhost -->
-  <section class="container-1 pt-40 pb-20 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
-
-    <div class="absolute -top-40 -right-40 w-500px h-500px bg-secondary rounded-full opacity-20 blur-3xl"
-    ></div>
-    
-    <div class="absolute -bottom-40 -left-40 w-400px h-400px bg-secondary rounded-full opacity-20 blur-3xl"></div>
-
-
+  <section id="main-header" class="mx-4 py-40 md:py-60 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden lg:max-w-6xl md:mx-auto">
 
     <!-- (LEFT TEXT) -->
    <div class="max-w-xl relative z-10">
       <p class="text-secondary font-semibold mb-4">
-        Smart Parking System
+        Parking Space Management & Reservation System
       </p>
 
       <h1 class="text-5xl lg:text-6xl font-bold text-text leading-tight">
@@ -42,12 +35,12 @@
 
       <div class="mt-8 flex gap-4">
         <a href="/book-reservation.html"
-          class="bg-secondary text-primary px-6 py-3 rounded-full font-semibold">
+          class="bg-secondary text-primary px-8 py-3 rounded-full font-semibold hover:bg-text/70 duration-300 ease-out ">
           Book Parking
         </a>
 
-        <a href="#"
-          class="border border-secondary text-secondary px-6 py-3 rounded-full font-semibold">
+        <a href="#features"
+          class="border border-secondary text-secondary px-8 py-3 rounded-full font-semibold hover:bg-text/70 duration-300 ease-out hover:border-none hover:text-primary ">
           Learn More
         </a>
       </div>
@@ -62,7 +55,17 @@
     </div>
   </section>
 
-<section class="container mx-auto px-6 py-16">
+<section id="banner-1" class="mb-20">
+  <div class="bg-secondary py-20 rounded-2xl lg:px-100 container-1">
+    <div class="flex flex-col gap-3 items-center lg:mx-20">
+    <h1 class="text-4xl font-semibold mb-5 text-primary text-center">"Parking Made Simple. Reservation Made Smart."</h1>
+    <p class="text-lg text-center text-primary">Experience a seamless parking journey. Find, reserve, and secure your slot in just a few clicks—no stress, no delays. Leveraging modern technology to streamline your parking experience. Fast, reliable, and always ready for your arrival</p>
+    <a href="#features" class="my-5 bg-secondary py-3 px-8 rounded-3xl font-semibold text-primary text-base border border-primary hover:bg-primary transition hover:text-text">See More</a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="container mx-auto px-6 py-16">
     <div class="text-center mb-12">
       <h2 class="text-4xl font-bold text-slate-900">Features</h2>
       <p class="text-gray-500 mt-2">Everything you need to make your parking experience a breeze.</p>
@@ -145,20 +148,20 @@
     </div>
   </section>
 
-  <section class="container mx-auto px-6 py-20 bg-[#f8fbff]" x-data="{ activeStep: 1 }">
+  <section id="how-it-works" class=" mx-auto px-6 py-20 bg-[#f8fbff]" x-data="{ activeStep: 1 }">
     <div class="text-center mb-16">
       <h2 class="text-4xl font-bold text-slate-900 mb-4">How it works</h2>
       <p class="text-gray-500 max-w-2xl mx-auto">Stop circling for a spot. Parking Hub takes the guesswork out of parking so you can save time, money, and stress.</p>
     </div>
 
-    <div class="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
+    <div class="flex flex-col lg:flex-row items-center gap-16 container-1">
       
       <div class="w-full lg:w-1/2 space-y-4">
         
         <div 
           @click="activeStep = 1"
           @mouseenter="activeStep = 1"
-          :class="activeStep === 1 ? 'bg-white shadow-xl translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
+          :class="activeStep === 1 ? 'bg-white shadow-xl -translate-y-4 md:translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
           class="p-6 rounded-xl cursor-pointer transition-all duration-300 group"
         >
           <h3 class="text-xl font-bold" :class="activeStep === 1 ? 'text-blue-600' : 'text-slate-800'">Find Your Spot Before You Go</h3>
@@ -170,7 +173,7 @@
         <div 
           @click="activeStep = 2"
           @mouseenter="activeStep = 2"
-          :class="activeStep === 2 ? 'bg-white shadow-xl translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
+          :class="activeStep === 2 ? 'bg-white shadow-xl -translate-y-4 md:translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
           class="p-6 rounded-xl cursor-pointer transition-all duration-300 group"
         >
           <h3 class="text-xl font-bold" :class="activeStep === 2 ? 'text-blue-600' : 'text-slate-800'">Park Smarter, Not Harder</h3>
@@ -182,8 +185,8 @@
         <div 
           @click="activeStep = 3"
           @mouseenter="activeStep = 3"
-          :class="activeStep === 3 ? 'bg-white shadow-xl translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
-          class="p-6 rounded-xl cursor-pointer transition-all duration-300 group"
+          :class="activeStep === 3 ? 'bg-white shadow-xl   border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
+          class="p-6 rounded-xl cursor-pointer transition-all duration-300 group hover:-translate-y-4 md:hover:translate-x-4"
         >
           <h3 class="text-xl font-bold" :class="activeStep === 3 ? 'text-blue-600' : 'text-slate-800'">Save Time and Money</h3>
           <p class="text-gray-500 mt-2 text-sm leading-relaxed">
@@ -194,8 +197,9 @@
         <div 
           @click="activeStep = 4"
           @mouseenter="activeStep = 4"
-          :class="activeStep === 4 ? 'bg-white shadow-xl translate-x-4 border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
-          class="p-6 rounded-xl cursor-pointer transition-all duration-300 group"
+          :class="activeStep === 4 ? 'bg-white shadow-xl  border-l-4 border-blue-500' : 'bg-transparent border-l-4 border-transparent'"
+          class="p-6 rounded-xl cursor-pointer transition-all duration-300 group
+          hover:-translate-y-4 md:hover:translate-x-4"
         >
           <h3 class="text-xl font-bold" :class="activeStep === 4 ? 'text-blue-600' : 'text-slate-800'">Reserve Your Spot</h3>
           <p class="text-gray-500 mt-2 text-sm leading-relaxed">
@@ -205,30 +209,30 @@
 
       </div>
 
-      <div class="w-full lg:w-1/2 flex justify-center relative h-500px items-center">
+      <div class="w-full lg:w-1/2  justify-center relative h-500px items-center hidden  md:flex">
         <div class="absolute inset-0 bg-blue-400 opacity-10 blur-[100px] rounded-full"></div>
         
         <img x-show="activeStep === 1" x-transition.fade.duration.500ms 
           src="spot mobile.png" 
-          class="max-h-full rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Map View">
+          class="max-h-150 rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Map View">
           
         <img x-show="activeStep === 2" x-transition.fade.duration.500ms 
           src="reserve mobile.png" 
-          class="max-h-full rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Filters View">
+          class="max-h-150 rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Filters View">
 
         <img x-show="activeStep === 3" x-transition.fade.duration.500ms 
           src="qr mobile.png" 
-          class="max-h-full rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Savings View">
+          class="max-h-150 rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Savings View">
           
         <img x-show="activeStep === 4" x-transition.fade.duration.500ms 
           src="book mobile.png" 
-          class="max-h-full rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Booking View">
+          class="max-h-150 rounded-[2.5rem] shadow-2xl border-8px border-slate-900" alt="Booking View">
       </div>
 
     </div>
   </section>
 
-<section class="container mx-auto px-6 py-16">
+<section id="about-sys" class="container mx-auto px-6 py-16">
     <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100">
       
       <div class="text-center mb-10">
@@ -277,7 +281,7 @@
     </div>
   </section>
 
-<section class="container mx-auto px-6 pb-20">
+<section id="story" class="container mx-auto px-6 pb-20">
     <div class="bg-white rounded-3xl shadow-xl p-8 md:p-16 border border-gray-100 text-center">
       
       <div class="flex flex-col items-center mb-8">
@@ -301,7 +305,11 @@
     </div>
   </section>
 
-  <section class="container mx-auto px-6 py-20">
+<section id="services"></section>
+
+<section id="about-us"></section>
+
+  <section id="FAQ" class="container mx-auto px-6 mt-20">
   <div class="text-center mb-16">
     <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Frequently asked questions</h2>
     <p class="text-gray-500 text-lg">If you can't find what you are looking for don't hesitate to contact us.</p>
@@ -417,6 +425,26 @@
       </div>
     </details>
 
+  </div>
+</section>
+
+<section id="project-showcase" class="my-20">
+  <div class="container-1">
+
+    <h3 class="text-center my-10 text-3xl font-semibold">Showcase</h3>
+    
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div class="">
+   <img src="./public/showcase/1.png" alt="">
+    </div>
+
+    <div class="">
+        <img src="./public/showcase/2.png" alt="">
+    </div>
+
+    <div class="">
+         <img src="./public/showcase/3.png" alt="">
+    </div>
   </div>
 </section>
 

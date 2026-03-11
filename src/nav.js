@@ -17,7 +17,8 @@ export function renderNavigation(){
   </div>
 
   <nav class="hidden lg:flex items-center gap-8">
-    <a href="/index.html" class="text-lg font-medium text-text hover:text-secondary transition">Dashboard</a>
+  <a href="/index.html" class="text-lg font-medium text-text hover:text-secondary transition">Home</a>
+    <a href="/dashboard.html" class="text-lg font-medium text-text hover:text-secondary transition">Dashboard</a>
     <a href="/book-reservation.html" class="text-lg font-medium text-text hover:text-secondary transition">Book Reservation</a>
     <a href="/profile.html" class="text-lg font-medium text-text hover:text-secondary transition">Profile</a>
   </nav>
@@ -44,7 +45,10 @@ export function renderNavigation(){
     <div class="p-4">
     <nav class="border-b-2">
     <ul class="flex flex-col gap-7 mt-5">
-      <li class="link-nav"><i class="fa-solid fa-house mx-2"></i><a href="/index.html">Dashboard</a></li>
+
+      <li class="link-nav"><i class="fa-solid fa-house mx-2"></i><a href="/index.html">Home</a></li>
+     
+      <li class="link-nav"><i class="fa-solid fa-box mx-2"></i><a href="/index.html">Dashboard</a></li>
 
       <li class="link-nav"><i class="fa-solid fa-book mx-2"></i><a href="/book-reservation.html">Book Reservation</a></li>
 

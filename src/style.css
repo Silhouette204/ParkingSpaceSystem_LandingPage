@@ -29,3 +29,9 @@
 .link-nav{
   @apply text-text text-xl font-semibold hover:bg-secondary py-3 hover:text-primary rounded-md transition-all duration-300;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
