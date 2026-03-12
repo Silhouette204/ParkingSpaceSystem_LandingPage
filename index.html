@@ -305,9 +305,78 @@
     </div>
   </section>
 
-<section id="services"></section>
+<section id="services" class="mb-20">
+  <div class="container-1">
 
-<section id="about-us"></section>
+    <h1 class="text-center font-semibold text-3xl mb-10">Services</h1>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+      <div class="service-card">
+  <div class="flex flex-col gap-5 items-center justify-center">
+   <i class="fa-solid fa-search service-icon"></i>
+   <h1 class="text-3xl font-semibold">Real-time Availability</h1>
+   <p class="text-center">Don't waste time circling around. Our system instantly displays all available parking slots in real-time, helping you find the perfect spot the moment you arrive.</p>
+      </div>  
+    </div>
+
+     <div class="service-card">
+  <div class="flex flex-col gap-5 items-center justify-center">
+   <i class="fa-solid fa-calendar-check service-icon"></i>
+   <h1 class="text-3xl font-semibold">One-Click Reservation</h1>
+   <p class="text-center">Secure your parking space ahead of time. With our intuitive interface, you can book your preferred slot in just a few seconds and ensure your spot is waiting for you.</p>
+      </div>  
+    </div>
+
+      <div class="service-card">
+  <div class="flex flex-col gap-5 items-center justify-center">
+   <i class="fa-solid fa-shield service-icon"></i>
+   <h1 class="text-3xl font-semibold">Safe & Organized</h1>
+   <p class="text-center">Rest easy knowing your parking experience is managed professionally. We provide a structured system that monitors slot status to prevent overbooking and unauthorized access.</p>
+      </div>  
+    </div>
+
+  </div>
+</section>
+
+<section id="about-us">
+  <div class="container-1">
+    <div id="about-us-header" class="flex flex-col gap-5 items-center">
+  <h1 class="text-center font-semibold text-text text-4xl">About Us</h1>
+  <h3>"Built for the Community, by the Student"</h3>
+  <p class="text-center">"Developed to solve the common parking challenges faced by our fellow students and staff, this system is more than just a reservation tool—it’s a commitment to a more organized campus. We are dedicated to creating a system that values your time, ensures fairness, and makes every arrival a stress-free experience."</p>
+  </div>
+
+  <div id="groupmates" class="my-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      
+      <div class="about-us-card">
+        <div class="flex  justify-center">
+       <img src="./public/person/Burce.png" class="h-56 w-56 object-cover rounded-full" alt="">
+       </div>
+       <div class="my-5 flex flex-col gap-2 items-center">
+          <h1 class="text-xl font-semibold text-text">Burce, John Lester J.</h1>
+          <p class="text-center">Web Designer UI/UX and Front-End Handler</p>
+       </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="my-10 flex flex-col gap-6 md:flex-row">
+  <div class="service-card flex flex-col gap-6 items-center">
+  <h1 class="text-2xl font-semibold">"Smart Parking, Streamlined."</h1>
+  <p class="text-center text-base">"Innovation meets convenience. Our parking reservation system is designed with cutting-edge technology to provide real-time updates and effortless management. We are pushing for a future where parking is no longer a hurdle, but a standard part of a well-organized, efficient, and tech-driven campus life."</p>
+  </div>
+
+  <div class="service-card flex flex-col gap-6 items-center">
+    <h1 class="text-2xl font-semibold">"Redefining Campus Mobility."</h1>
+  <p class="text-center text-base">"We believe that your day shouldn't start with the stress of searching for a parking spot. Our mission is to transform the traditional parking experience into a modern, seamless, and digital-first journey. By bridging the gap between drivers and available spaces, we empower our community to save time and move with confidence."</p>
+  </div>
+
+  </div>
+  </div>
+</section>
 
   <section id="FAQ" class="container mx-auto px-6 mt-20">
   <div class="text-center mb-16">
@@ -431,7 +500,10 @@
 <section id="project-showcase" class="my-20">
   <div class="container-1">
 
-    <h3 class="text-center my-10 text-3xl font-semibold">Showcase</h3>
+    <div class="my-10 flex flex-col gap-2">
+    <h3 class="text-center  text-3xl font-semibold">Showcase</h3>
+    <p class="text-center text-base text-text">Some of the User Interfaces inside the whole system.</p>
+    </div>
     
     <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
       <div class="">
@@ -447,6 +519,8 @@
     </div>
   </div>
 </section>
+
+</body>
 
   <footer class="bg-[#0f172a] text-gray-400 py-12">
     <div class="container mx-auto px-6">
@@ -510,6 +584,5 @@
     </div>
   </footer>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>  
 
-</body>
